@@ -1,0 +1,3 @@
+: SPROUTS ." Miniature vegetables." ;
+: MENU CR SPROUTS CR ;
+MENU

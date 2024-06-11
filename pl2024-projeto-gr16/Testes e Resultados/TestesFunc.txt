@@ -1,0 +1,10 @@
+: AVERAGE ( a b -- avg ) + 2/ ;
+: CENA ;
+: double ( n -- n*2 ) 2 * ;
+5 double .
+: is-even? ( n -- flag ) 2 MOD 0= ;
+6 is-even? .
+: even-or-double ( n -- n|2n )
+    dup is-even? IF
+        double ELSE dup THEN ;
+6 even-or-double .

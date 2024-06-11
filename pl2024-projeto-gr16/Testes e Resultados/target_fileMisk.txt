@@ -1,0 +1,45 @@
+START
+pushi -5
+DUP 1
+pushi 0
+INF
+jz ENDIF1
+pushi -1
+MUL
+ENDIF1:
+writei
+pushi 5
+pushi -1
+MUL
+writei
+pushi 5
+pushi 3
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+INF
+jz ELSE2
+POP 1
+jump ENDIF2
+ELSE2:
+SWAP
+POP 1
+ENDIF2:
+writei
+pushi 5
+pushi 3
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+SUP
+jz ELSE3
+POP 1
+jump ENDIF3
+ELSE3:
+SWAP
+POP 1
+ENDIF3:
+writei
+STOP

@@ -1,0 +1,26 @@
+START
+pushi 5
+pushi 2
+MUL
+writei
+pushi 6
+pushi 2
+MOD
+pushi 0
+EQUAL
+writei
+pushi 6
+DUP 1
+pushi 2
+MOD
+pushi 0
+EQUAL
+jz evenordouble1ELSE1
+pushi 2
+MUL
+jump evenordouble1ENDIF1
+evenordouble1ELSE1:
+DUP 1
+evenordouble1ENDIF1:
+writei
+STOP

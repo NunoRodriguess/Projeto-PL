@@ -1,0 +1,6 @@
+START
+WRITELN
+pushs"Miniature vegetables"
+writes
+WRITELN
+STOP

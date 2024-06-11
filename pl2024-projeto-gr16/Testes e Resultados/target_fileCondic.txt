@@ -1,0 +1,28 @@
+START
+pushi 2
+pushi 3
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+SUP
+jz ELSE1
+POP 1
+jump ENDIF1
+ELSE1:
+SWAP
+POP 1
+ENDIF1:
+pushi 2
+pushi 3
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+EQUAL
+jz ENDIF2
+SWAP
+writei
+ENDIF2:
+writei
+STOP

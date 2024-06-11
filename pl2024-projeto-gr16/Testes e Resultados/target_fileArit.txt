@@ -1,0 +1,101 @@
+pushi 0
+START
+pushi 30
+pushi 5
+SUB
+writei
+pushi 30
+pushi 5
+DIV
+writei
+pushi 30
+pushi 5
+MUL
+writei
+pushi 30
+pushi 5
+ADD
+pushi 7
+DIV
+writei
+pushi 11
+pushi 5
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+MOD
+storeg 0
+SWAP
+pushg 0
+SWAP
+storeg 0
+SWAP
+pushg 0
+SWAP
+DIV
+writei
+writei
+pushi 1
+pushi 3
+DUP 1
+pushi 0
+INF
+jz ENDIF1
+pushi -1
+MUL
+ENDIF1:
+writei
+pushi 3
+pushi -1
+MUL
+writei
+pushi 1
+pushi 9
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+INF
+jz ELSE2
+POP 1
+jump ENDIF2
+ELSE2:
+SWAP
+POP 1
+ENDIF2:
+writei
+pushi 3
+pushi 2
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+SUP
+jz ELSE3
+POP 1
+jump ENDIF3
+ELSE3:
+SWAP
+POP 1
+ENDIF3:
+writei
+pushi 1
+pushi 2
+ADD
+pushi 1
+pushi 1
+ADD
+pushi 3
+pushi 1
+SUB
+pushi 2
+pushi 2
+SUB
+pushi 2
+pushi 2
+MUL
+pushi 4
+pushi 2
+DIV
+STOP

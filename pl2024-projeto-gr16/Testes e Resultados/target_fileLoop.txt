@@ -1,0 +1,66 @@
+pushi 0
+pushi 0
+pushi 0
+pushi 0
+START
+pushi 10
+pushi 3
+storeg 1
+storeg 0
+LOOPLABEL0:
+pushg 1
+writei
+pushg 1
+pushi 1
+ADD
+DUP 1
+storeg 1
+pushg 0
+SUPEQ
+jz LOOPLABEL0
+WRITELN
+pushi 0
+LOOPLABEL1:
+pushi 1
+ADD
+DUP 1
+writei
+DUP 1
+pushi 5
+EQUAL
+jz LOOPLABEL1
+WRITELN
+pushi 12
+LOOPLABEL2:
+DUP 1
+writei
+pushi 1
+ADD
+DUP 1
+pushi 15
+INF
+pushi 0
+EQUAL
+NOT
+jz LOOPLABEL3
+pushi 20
+writei
+jump LOOPLABEL2
+LOOPLABEL3:
+WRITELN
+pushi 10
+pushi 0
+storeg 3
+storeg 2
+LOOPLABEL4:
+pushg 3
+writei
+pushi 2
+pushg 3
+ADD
+DUP 1
+storeg 3
+pushg 2
+SUPEQ
+jz LOOPLABEL4
+STOP

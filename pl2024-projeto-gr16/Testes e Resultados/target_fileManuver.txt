@@ -1,0 +1,38 @@
+pushi 0
+START
+pushi 5
+DUP 1
+writei
+pushi 5
+pushi 3
+pushsp
+LOAD -1
+pushsp
+LOAD -1
+writei
+writei
+writei
+writei
+pushi 5
+pushi 3
+SWAP
+writei
+pushi 1
+pushi 2
+pushi 3
+storeg 0
+SWAP
+pushg 0
+SWAP
+writei
+writei
+writei
+pushi 5
+pushi 3
+pushsp
+load -1
+writei
+pushi 5
+POP 1
+writei
+STOP

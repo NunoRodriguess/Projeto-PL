@@ -1,0 +1,6 @@
+5 dup .
+5 3 2dup . . . .
+5 3 swap .
+1 2 3 rot . . .
+5 3 over .
+5 drop .

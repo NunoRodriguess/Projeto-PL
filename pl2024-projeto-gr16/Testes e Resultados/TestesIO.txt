@@ -1,0 +1,8 @@
+5 .
+key
+char ola
+char +
+cr
+space
+5 spaces
+97 emit

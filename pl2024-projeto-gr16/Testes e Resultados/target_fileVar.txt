@@ -1,0 +1,8 @@
+pushi 0
+START
+pushi 5
+storeg 0
+pushg 0
+writei
+pushg 0
+STOP

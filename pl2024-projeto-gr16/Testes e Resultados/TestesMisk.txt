@@ -1,0 +1,4 @@
+-5 abs .
+5 negate .
+5 3 min .
+5 3 max .

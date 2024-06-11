@@ -1,0 +1,35 @@
+START
+pushi 5
+pushi 5
+EQUAL
+writei
+pushi 5
+pushi 5
+EQUAL
+NOT
+writei
+pushi 5
+pushi 3
+SUP
+writei
+pushi 3
+pushi 5
+INF
+writei
+pushi 0
+pushi 0
+EQUAL
+writei
+pushi 0
+pushi 0
+INF
+writei
+pushi 1
+pushi 0
+SUP
+writei
+pushi 0
+writei
+pushi 1
+writei
+STOP

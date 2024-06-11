@@ -1,0 +1,2 @@
+2 3 2dup > if drop else swap drop then
+2 3 2dup = if swap . then .

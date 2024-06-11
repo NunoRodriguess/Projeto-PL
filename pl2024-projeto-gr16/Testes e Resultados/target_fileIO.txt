@@ -1,0 +1,31 @@
+pushi 0
+START
+pushi 5
+writei
+READ
+CHRCODE
+pushs"o"
+CHRCODE
+pushs"+"
+CHRCODE
+WRITELN
+pushs" "
+writes
+pushi 5
+pushi 0
+SUB
+storeg 0
+LOOPLABEL0:
+pushs" "
+writes
+pushg 0
+pushi 1
+SUB
+DUP 1
+storeg 0
+pushi 0
+EQUAL
+jz LOOPLABEL0
+pushi 97
+WRITECHR
+STOP

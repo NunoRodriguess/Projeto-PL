@@ -1,0 +1,6 @@
+START
+pushi 1
+pushi 2
+ADD
+pushi 3
+STOP
